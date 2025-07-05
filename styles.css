@@ -1,0 +1,116 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('background.jpg'); /* Corrected relative path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    margin: 0; /* Removes default margin */
+    height: 100vh; /* Ensures the background covers the full height of the viewport */
+}
+
+/* Language Selector styling */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.language-selector label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.language-selector select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Mood Buttons styling */
+.mood-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button color variations */
+#happyButton {
+    background-color: #28a745;
+}
+
+#sadButton {
+    background-color: #007bff;
+}
+
+#angryButton {
+    background-color: #dc3545;
+}
+
+#fearButton {
+    background-color: #ffc107;
+}
+
+#surpriseButton {
+    background-color: #6c757d;
+}
+
+#disgustButton {
+    background-color: #6610f2;
+}
+
+#motivateButton {
+    background-color: #20c997;
+}
+
+#irritatedButton {
+    background-color: #fd7e14;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.05);
+}
